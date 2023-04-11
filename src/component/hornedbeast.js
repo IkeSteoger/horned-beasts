@@ -1,12 +1,47 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Heart from './heartImg.png'
+import Image from 'react-bootstrap/Image'
 
 class HornedBeast extends React.Component {
+    
+    constructor(props){
+        super(props);
+        this.state = {
+            favs: 0
+        }
+    }
+
+      
+  
+    handleClick = () => {
+        let newState = this.state.favs 
+
+        this.setState({
+            favs: newState + 1
+        })
+    }
+
     render() {
         return (
             <>
-                <h2>{this.props.title}</h2>
-                <img src={this.props.imageUrl} alt="" title={this.props.title}/>
-                <p>{this.props.description}</p>
+                <div onClick={this.handleClick} className='m-5 square border border-secondary'>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h2>{this.props.title}</h2>
+                                <Image src={this.props.imageUrl} alt={this.props.title} rounded fluid/>
+                                <p>{this.props.description}</p>
+                            </Col>
+                            <Col>
+                                <Image src={Heart} alt="heart" width={350} rounded fluid/> 
+                                <p>Times Favorited: {this.state.favs}</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </>
         )
     }
