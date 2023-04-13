@@ -31,3 +31,13 @@ Built using React.
 >Finish time: 4:30pm
 >
 >Actual time needed to complete: 30 mins
+
+>Number and name of feature: Modal
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start time: 4pm
+>
+>Finish time: 6:30pm
+>
+>Actual time needed to complete: 2.5 hours
