@@ -22,18 +22,18 @@ class HornedBeast extends React.Component {
         this.setState({
             favs: newState + 1
         })
+        this.props.onClickState(this.props.title, this.props.imageUrl, this.props.description);
     }
 
     render() {
         return (
             <>
                 <div onClick={this.handleClick} className='m-5 square border border-secondary'>
-                    <Container>
+                    <Container fluid>
                         <Row>
                             <Col>
                                 <h2>{this.props.title}</h2>
                                 <Image src={this.props.imageUrl} alt={this.props.title} rounded fluid/>
-                                <p>{this.props.description}</p>
                             </Col>
                             <Col>
                                 <Image src={Heart} alt="heart" width={350} rounded fluid/> 
