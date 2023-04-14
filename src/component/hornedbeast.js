@@ -34,6 +34,7 @@ class HornedBeast extends React.Component {
                             <Col>
                                 <h2>{this.props.title}</h2>
                                 <Image src={this.props.imageUrl} alt={this.props.title} rounded fluid/>
+                                <p>Number of horns: {this.props.beastHorns}</p>
                             </Col>
                             <Col>
                                 <Image src={Heart} alt="heart" width={350} rounded fluid/> 
