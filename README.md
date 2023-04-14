@@ -41,3 +41,13 @@ Built using React.
 >Finish time: 6:30pm
 >
 >Actual time needed to complete: 2.5 hours
+
+>Number and name of feature: Forms & Filter
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start time: 2:30pm
+>
+>Finish time: 5:30
+>
+>Actual time needed to complete: 3 hours

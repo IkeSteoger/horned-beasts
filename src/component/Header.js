@@ -7,7 +7,7 @@ class Header extends React.Component {
         return ([
         <Container>
             <Row>
-                <h1 className="text-center">Horned Beasts</h1>,
+                <h1 className="text-center">Horned Beasts</h1>
                 <h2 className="text-center">Click your favorites!</h2>
             </Row>
         </Container>

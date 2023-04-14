@@ -9,13 +9,14 @@ class Main extends React.Component {
             {
                 this.props.imageUrls.map(imageInfo => 
                     <HornedBeast 
-                        onClickState={this.props.onSelection}
-                        title={imageInfo.title} 
-                        imageUrl={imageInfo.image_url}
-                        description={imageInfo.description}
+                    onClickState={this.props.onSelection}
+                    title={imageInfo.title} 
+                    imageUrl={imageInfo.image_url}
+                    description={imageInfo.description}
+                    beastHorns={imageInfo.horns}
                     />
                     )
-            }
+                }
             </>
         )
     }
