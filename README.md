@@ -48,6 +48,6 @@ Built using React.
 >
 >Start time: 2:30pm
 >
->Finish time:
+>Finish time: 5:30
 >
->Actual time needed to complete:
+>Actual time needed to complete: 3 hours
